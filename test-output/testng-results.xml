@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10220" started-at="2019-03-26T20:35:29Z" finished-at="2019-03-26T20:35:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10220" started-at="2019-03-26T20:35:29Z" finished-at="2019-03-26T20:35:39Z">
+      <class name="saucelabs.tests.DiscountTiresTest">
+        <test-method status="PASS" signature="testWithFirefox()[pri:0, instance:saucelabs.tests.DiscountTiresTest@754ba872]" name="testWithFirefox" duration-ms="9811" started-at="2019-03-26T20:35:29Z" finished-at="2019-03-26T20:35:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithFirefox -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:saucelabs.tests.DiscountTiresTest@754ba872]" name="tearDown" is-config="true" duration-ms="390" started-at="2019-03-26T20:35:39Z" finished-at="2019-03-26T20:35:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- saucelabs.tests.DiscountTiresTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

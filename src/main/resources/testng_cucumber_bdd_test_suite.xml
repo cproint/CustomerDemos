@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="API Smoke Tests (HCP/NOC)">
+
+	<test name="SmokeTests">
+		<classes>
+			<class name="com.amsarmada.qa.automation.cucumber.bdd.testrunners.TestNGRunner" />
+		</classes>
+	</test>
+
+</suite>

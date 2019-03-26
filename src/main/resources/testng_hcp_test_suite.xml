@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "HCP Automation Test Suite"  verbose="1">
+
+	<listeners>
+		<listener class-name="com.amsarmada.qa.automation.extentreports.ExtentReportListnerNG" />
+		<listener class-name="com.amsarmada.qa.automation.retryanalyzer.RetryAnnotationTransformer" />
+	</listeners>
+
+
+<!--    <test name = "HCP Automation Test Cases">  //TODO - not working with mutiple classes
+      <classes>
+    			<class name = "com.amsarmada.qa.automation.hcp.tests.LoginPageTest" />	 
+         	<class name = "com.amsarmada.qa.automation.hcp.tests.ForgotPasswordPageTest" />                          
+      </classes>
+   </test> -->
+  
+  
+	<test name="HCP Automation - LoginPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.LoginPageTest"> </class>
+	    </classes>
+	</test>
+<!--	
+	<test name="HCP Automation - ForgotPasswordPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.ForgotPasswordPageTest"> </class>
+	    </classes>
+	</test>
+ 	
+  	<test name="HCP Automation - HomePageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.HomePageTest"> </class>
+	    </classes>
+	</test>
+
+	<test name="HCP Automation - OverviewPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.OverviewPageTest"> </class>
+	    </classes>
+	</test>
+	
+	<test name="HCP Automation - RealTimeBatteryChargePageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.RealTimeBatteryChargePageTest"> </class>
+	    </classes>
+	</test>
+	
+	<test name="HCP Automation - RealTimeCAISOCarbonIntensityPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.RealTimeCAISOCarbonIntensityPageTest"> </class>
+	    </classes>
+	</test>
+	
+	<test name="HCP Automation - RealTimeMarketPricePageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.RealTimeMarketPricePageTest"> </class>
+	    </classes>
+	</test>
+	
+	<test name="HCP Automation - TrendsPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.TrendsPageTest"> </class>
+	    </classes>
+	</test>
+	
+	<test name="HCP Automation - EnergySupplyPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.EnergySupplyPageTest"> </class>
+	    </classes>
+	</test>
+	
+	<test name="HCP Automation - ProfilePageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.ProfilePageTest"> </class>
+	    </classes>
+	</test>
+		<test name="HCP Automation - UserManagementPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.UserManagementPageTest"> </class>
+	    </classes>
+	</test>
+	
+	<test name="HCP Automation - AddUserPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.AddUserPageTest"> </class>
+	    </classes>
+	</test>
+	
+	<test name="HCP Automation - EditUserPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.EditUserPageTest"> </class>
+	    </classes>
+	</test>
+	
+	<test name="HCP Automation - AllSitesPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.AllSitesPageTest"> </class>
+	    </classes>
+	</test>
+ 
+	<test name="HCP Automation - MapPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.MapPageTest"> </class>
+	    </classes>
+	</test>
+	 
+	<test name="HCP Automation - PortfolioTablePageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.PortfolioTablePageTest"> </class>
+	    </classes>
+	</test>
+	
+	<test name="HCP Automation - LogoutPageTests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.hcp.tests.LogoutPageTest"> </class>
+	    </classes>
+	</test>
+ 	-->
+</suite>

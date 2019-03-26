@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "HCP Automation Test Suite"  verbose="1">
+
+	<listeners>
+		<listener class-name="com.amsarmada.qa.automation.extentreports.ExtentReportListnerNG" />
+		<listener class-name="com.amsarmada.qa.automation.retryanalyzer.RetryAnnotationTransformer" />
+	</listeners>
+  
+	<test name="Armada Data Validation Tests" parallel="methods">
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.datavalidation.tests.OperationalServiceAccountsDataValidationTester"> </class>
+	    </classes>
+	</test>
+	
+</suite>

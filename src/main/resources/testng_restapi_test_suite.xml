@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "RestAPI Automation Test Suite">
+
+
+	<listeners>
+		<listener class-name="com.amsarmada.qa.automation.extentreports.ExtentReportListnerNG" />
+		<listener class-name="com.amsarmada.qa.automation.retryanalyzer.RetryAnnotationTransformer" />
+	</listeners>
+
+
+
+   <!--
+      <groups>
+         <run>
+            <include name = "sanity" />
+            <exclude name = "regression"/>       
+         </run>
+      </groups>
+   -->
+<!-- 	<test name = "RestAPI Automation Test Cases - AggregationResourceEndpoints"> 
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.restapi.tests.AggregationResourceEndpoints"> </class>
+	    </classes> 
+	</test>
+
+		<test name = "RestAPI Automation Test Cases - BalancingAuthoritiesEndpoints"> 
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.restapi.tests.BalancingAuthoritiesEndpoints"> </class>
+	    </classes> 
+	</test>-->
+<!-- 	For some reason, BillEndpoints fails when in run with other classes. At this time, I am suspecting that the large outout. 
+		The trick is place this ahead of other Test Classes	 -->
+		
+<!-- 			
+
+	</test> 
+	<test name = "RestAPI Automation Test Cases - AggregationResourceEndpoints"> 
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.restapi.tests.AggregationResourceEndpoints"> </class>
+	    </classes> 
+	</test> 
+	
+	<test name = "RestAPI Automation Test Cases - BalancingAuthoritiesEndpoints"> 
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.restapi.tests.BalancingAuthoritiesEndpoints"> </class>
+	    </classes> 
+	</test> 
+
+
+
+
+	
+
+ -->
+	<test name = "RestAPI Automation Test Cases - AggregationResourceEndpoints"> 
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.restapi.tests.AggregationResourceEndpoints"> </class>
+	    </classes> 
+	</test> 
+		<test name = "RestAPI Automation Test Cases - BalancingAuthoritiesEndpoints"> 
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.restapi.tests.BalancingAuthoritiesEndpoints"> </class>
+	    </classes> 
+	</test>
+	
+		<test name = "RestAPI Automation Test Cases - BillPeriodsEndpoints"> 
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.restapi.tests.BillPeriodsEndpoints"> </class>
+	    </classes> 
+	</test>  
+	<test name = "RestAPI Automation Test Cases - BillsEndpoints"> 
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.restapi.tests.BillsEndpoints"> </class>
+	    </classes> 
+	</test>
+		<test name = "RestAPI Automation Test Cases - CalendarsEndpoints"> 
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.restapi.tests.CalendarsEndpoints"> </class>
+	    </classes> 
+	</test> 
+				<test name = "RestAPI Automation Test Cases - CarbonEmissionsEndpoints"> 
+	    <classes>
+	         <class name="com.amsarmada.qa.automation.restapi.tests.CarbonEmissionsEndpoints"> </class>
+	    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - ConditionMonitorEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.ConditionMonitorEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	    	<test name = "RestAPI Automation Test Cases - DispatchEventsEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.DispatchEventsEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	 <test name = "RestAPI Automation Test Cases - DNP3OutstationEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.DNP3OutstationEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - GatewaysEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.GatewaysEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - GatewayStatisticsEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.GatewayStatisticsEndpoints"> </class>
+		    </classes> 
+	    </test>
+
+	    	    	<test name = "RestAPI Automation Test Cases - GridBreakdownEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.GridBreakdownEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - HostCustomerContractsEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.HostCustomerContractsEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	    	<test name = "RestAPI Automation Test Cases - HostCustomersEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.HostCustomersEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - IntervalEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.IntervalEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	    	<test name = "RestAPI Automation Test Cases - JournalEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.JournalEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - LoadServingEntitiesEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.LoadServingEntitiesEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    
+	    	<test name = "RestAPI Automation Test Cases - LocationalMarginalPricesEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.LocationalMarginalPricesEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	    	<test name = "RestAPI Automation Test Cases - LookupsEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.LookupsEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	    	<test name = "RestAPI Automation Test Cases - MonthlyPerformanceEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.MonthlyPerformanceEndpoints"> </class>
+		    </classes> 
+	    </test>	    	<test name = "RestAPI Automation Test Cases - NOCEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.NOCEndpoints"> </class>
+		    </classes> 
+	    </test>	    	<test name = "RestAPI Automation Test Cases - OptimizationsEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.OptimizationsEndpoints"> </class>
+		    </classes> 
+	    </test>	    
+	    	<test name = "RestAPI Automation Test Cases - OrganizationsEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.OrganizationsEndpoints"> </class>
+		    </classes> 
+	    </test>
+
+	    
+	    	<test name = "RestAPI Automation Test Cases - PortifoliosEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.PortifoliosEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - PropertiesEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.PropertiesEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - SchedulesEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.SchedulesEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - ServiceAccountEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.ServiceAccountEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - SoftwareversionsEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.SoftwareversionsEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - SolarIntervalsEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.SolarIntervalsEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - SublapsEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.SublapsEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - SubstationsEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.SubstationsEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - TariffsEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.TariffsEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - TelemetriesEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.TelemetriesEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - UsersEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.UsersEndpoints"> </class>
+		    </classes> 
+	    </test>
+	    	<test name = "RestAPI Automation Test Cases - WeatherEndpoints"> 
+		    <classes>
+		         <class name="com.amsarmada.qa.automation.restapi.tests.WeatherEndpoints"> </class>
+		    </classes> 
+	    </test>
+
+	   <!--
+      <classes>
+          <class name = "com.amsarmada.qa.automation.restapi.tests.AggregationResourceEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.BalancingAuthoritiesEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.BillPeriodsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.BillsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.CalendarsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.CarbonEmissionsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.ConditionMonitorEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.DispatchEventsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.DNP3OutstationEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.GatewaysEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.GatewayStatisticsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.GridBreakdownEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.HostCustomerContractsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.HostCustomersEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.IntervalEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.JournalEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.LoadServingEntitiesEndpoints" />      
+          <class name = "com.amsarmada.qa.automation.restapi.tests.LocationalMarginalPricesEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.LookupsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.MonthlyPerformanceEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.NOCEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.OptimizationsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.OrganizationsEndpoints" />
+          
+          
+          
+          
+          <class name = "com.amsarmada.qa.automation.restapi.tests.PortifoliosEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.PropertiesEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.SchedulesEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.ServiceAccountEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.SoftwareversionsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.SolarIntervalsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.SublapsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.SubstationsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.TariffsEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.TelemetriesEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.UsersEndpoints" />
+          <class name = "com.amsarmada.qa.automation.restapi.tests.WeatherEndpoints" />
+      </classes>
+     --> 
+  
+ 
+  
+</suite>
