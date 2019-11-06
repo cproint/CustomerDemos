@@ -1,6 +1,5 @@
 package saucelabs.tests;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -13,24 +12,9 @@ public class SimpleSeleniumTestLocal {
 
         driver = new ChromeDriver();
 
-        driver.get("https://www.google.com");
-        
-        //driver.findElement(By.id("SearchButton")).isDisplayed();
-        
+        driver.get("https://www.saucedemo.com/");
+                
         System.out.println("Page Title:" + driver.getTitle());
-        System.out.println("Page Title:" + driver.getTitle());
-        System.out.println("Page Title:" + driver.getTitle());
-
-        //System.out.println("Page Title:" + driver.getTitle());
-
-        //System.out.println("Page Title:" + driver.getTitle());
-
-        //System.out.println("Page Title:" + driver.getTitle());
-        //System.out.println("Page Title:" + driver.getTitle());
-        //System.out.println("Page Title:" + driver.getTitle());
-
-        
-
 
         driver.quit();
     }
