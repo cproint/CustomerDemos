@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="5">
+
+	<test name="Test Parallel Execution using TestNG Parameters">
+        <parameter name="browserName" value="chrome" />
+        <parameter name="browserVersion" value="70.0" />
+        <parameter name="platformName" value="OS X 10.10" />
+        
+        <classes>
+            <class name="saucelabs.tests.SimpleSeleniumTestRemoteParallelTestNG" />
+        </classes>
+    </test>
+
+
+</suite> 
+
+
+	   
